@@ -1,0 +1,98 @@
+/* Professional Report Utilities */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    --color-bg: #f8fafc;
+    /* Slate-50 */
+    --color-surface: #ffffff;
+    /* White */
+    --color-text-head: #0f172a;
+    /* Slate-900 */
+    --color-text-body: #334155;
+    /* Slate-700 */
+    --color-primary: #4f46e5;
+    /* Indigo-600 */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-body);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-text-head);
+    letter-spacing: -0.025em;
+}
+
+/* Document Card Style */
+.report-card {
+    background: var(--color-surface);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    /* Sharper corners for pro feel */
+}
+
+/* Section Headers */
+.section-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: #64748b;
+    /* Slate-500 */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+/* Indicators */
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.timeline-item {
+    border-left: 2px solid #e2e8f0;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -0.4rem;
+    top: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #cbd5e1;
+}
+
+/* Pro Button */
+.btn-pro {
+    background-color: var(--color-text-head);
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-pro:hover {
+    background-color: #1e293b;
+}
+
+/* Print Overrides */
+.html2pdf__page-break {
+    page-break-before: always;
+}
